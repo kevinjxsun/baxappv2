@@ -1,2 +1,2 @@
 # Baxter Calculator App
-An app I made to calculate the hours remaining including info of liters remaining anf bags remaining
+An app I made to calculate the hours remaining in the current workload including info of liters remaining anf bags remaining
