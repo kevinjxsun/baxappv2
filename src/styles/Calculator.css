@@ -1,5 +1,5 @@
 .frame {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
 }
@@ -14,38 +14,42 @@ input::-webkit-inner-spin-button {
 
 
 form {
- margin: 5%;
- padding: 5%;
- width: fit-content;
+ margin: 3%;
+ padding: 3%;
+ height: 40vh;
+ width: 50%;
  min-width: fit-content;
  background-color: #f9f9f9;
  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .inputs {
-    width: 200px;
+    font-size: 1.8rem;
+    width: 90%;
+    margin: 0 auto;
     padding: 2px;
     display: flex;
     justify-content: space-between;
 }
 
 label {
-    width: 60%;
+    width: 80%;
     padding: 5px;
     margin: 5px;
 }
 
 input {
-    width: 80%;
-    height: 50%;
+    width: 30%;
+    height: 70%;
     margin: auto 5px;
-    padding: 2px;
+    padding: 8px;
 }
 
 select {
-    height: 20px;
+    font-size: 1rem;
+    height: 70%;
     margin: auto 5px;
-    padding: 2px;
+    padding: 8px;
 }
 
 .button {
@@ -55,8 +59,9 @@ select {
 }
 
 button {
+    margin-top: 5%;
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: #012588;
     color: #f9f9f9;
     border-style: none;
@@ -73,13 +78,13 @@ button:hover {
     width: 400px;
     min-width: 200px;
     height: 300px;
-    /* background-color: #f9f9f9;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
 }
 
 .info {
-    margin: 10% auto;
+    margin: 1.2% 10%;
     width: 90%;
+    padding: 5%;
+    scale: 1.2;
 }
 
 h3 {
@@ -94,7 +99,8 @@ h3 {
 
 @media screen and (max-width: 600px) {
     .frame {  
-     margin: 0;
+     margin: 0 auto;
+     width: 100%;
      display: flex;
      align-items: center;
      flex-direction: column;
@@ -102,10 +108,11 @@ h3 {
 
     form {
         margin: 0;
+        width: 90%;
     }
 
     .results {
-     margin-left: 40%;
+     margin: 0 auto;
     }
     
     .error {
