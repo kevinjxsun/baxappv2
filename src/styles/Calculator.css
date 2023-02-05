@@ -14,34 +14,30 @@ input::-webkit-inner-spin-button {
 
 
 form {
- margin: 3%;
- padding: 3%;
- height: 400px;
- width: 400px;
- min-width: 400px;
+ margin: 5%;
+ padding: 5%;
+ width: fit-content;
  min-width: fit-content;
  background-color: #f9f9f9;
  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .inputs {
-    font-size: 1.5rem;
-    width: 90%;
-    margin: 0 auto;
+    width: 200px;
     padding: 2px;
     display: flex;
     justify-content: space-between;
 }
 
 label {
-    width: 60%;
+    width: 80%;
     padding: 5px;
     margin: 5px;
 }
 
 input {
-    width: 50%;
-    height: 70%;
+    width: 80%;
+    height: 50%;
     margin: auto 5px;
     padding: 8px;
 }
@@ -60,7 +56,6 @@ select {
 }
 
 button {
-    margin-top: 20%;
     width: 100%;
     height: 40px;
     background-color: #012588;
