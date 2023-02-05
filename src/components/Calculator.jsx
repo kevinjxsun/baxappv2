@@ -52,11 +52,17 @@ const Calculator = () => {
 
   const [form, setForm] = useState(formData)
   const [info, setInfo] = useState()
+  const [error, setError] = useState(false)
 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const answer = calculate(form.liters,form.output,form.scrap,form.bpm,form.bagSize)
+
+    if(((form.output - form.scrap) * form.bagSize / 1000) > (form.liters)) {
+        setError(true)
+    } else setError(false)
+
     setInfo(answer)
     console.log('info',info)
   }
@@ -120,13 +126,16 @@ const Calculator = () => {
             </div>
         </form>
         <div className='results'>
-            <div className='info'>
+            { !error && <div className='info'>
                 <h3>{info && `${info.current} / ${info.total} Bags`}</h3>
                 <h3>{info && `${info.currLiters} / ${info.tLiters} Liters`}</h3>
                 <h3>{info && `${info.bags} Bags remaining`}</h3>
                 <h3>{info && `${info.liters} Liters remaining`}</h3>
                 <h3>{info && `est. ~ ${info.hours} `}</h3>
                 
+            </div>}
+            <div>
+                {error && <p className='error'>*You entered an output that would be greater than the total liters, please enter the correct info</p>}
             </div>
         </div>
     </div>
