@@ -112,6 +112,7 @@ const Calculator = () => {
                 <select id='bagSize' name='bagSize' onChange={handleChange}>
                     <option value='50'>50ml</option>
                     <option value='100'>100ml</option>
+                    <option value='200'>200ml</option>
                 </select>
             </div>
             <div className='inputs'>
